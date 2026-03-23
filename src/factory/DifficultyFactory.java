@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DifficultyFactory {
+
+    private DifficultyFactory() {}
+
     private static final Map<String, DifficultyStrategy> strategies = new HashMap<>();
 
     static {

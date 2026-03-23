@@ -11,6 +11,8 @@ import java.util.List;
 
 public class GameFactory {
 
+    private GameFactory() {}
+
     public static Game createGame(int n, int numPlayers, String difficulty) {
         if (numPlayers <= 1) throw new IllegalArgumentException("Number of players must be greater than 1");
 

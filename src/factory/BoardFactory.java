@@ -10,6 +10,9 @@ import java.util.Set;
 
 public class BoardFactory {
 
+    private BoardFactory() {
+    }
+
     public static Board createBoard(int n) {
         Board board = new Board(n);
         Random random = new Random();
