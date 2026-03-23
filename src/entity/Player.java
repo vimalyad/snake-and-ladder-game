@@ -1,7 +1,6 @@
 package SnakeAndLadderGame.src.entity;
 
 public class Player {
-
     private final String name;
     private int currentPosition;
 

@@ -1,7 +1,6 @@
 package SnakeAndLadderGame.src.entity;
 
 public abstract class BoardEntity {
-
     private final int start;
     private final int end;
 
@@ -12,11 +11,11 @@ public abstract class BoardEntity {
 
     public abstract int apply();
 
-    public int getEnd(){
+    public int getEnd() {
         return this.end;
     }
 
-    public int getStart(){
+    public int getStart() {
         return this.start;
     }
 }

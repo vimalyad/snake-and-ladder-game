@@ -3,7 +3,6 @@ package SnakeAndLadderGame.src.entity;
 import java.util.Random;
 
 public class Dice {
-
     private final int sides;
     private final Random rand;
 
