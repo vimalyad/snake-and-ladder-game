@@ -25,14 +25,14 @@ Execution) to ensure zero architectural overlap.
 ```mermaid
 classDiagram
     %% Core Engine & Factories
-    class Main {
-        +main(args: String[])
-    }
     class GameFactory {
         +createGame(n: int, numPlayers: int, difficulty: String): Game
     }
     class BoardFactory {
         +createBoard(n: int): Board
+    }
+    class DiceFactory {
+        +createDice(faces: int): Dice
     }
     class DifficultyFactory {
         +getStrategy(difficulty: String): DifficultyStrategy
@@ -104,10 +104,10 @@ classDiagram
     }
 
     %% Relationships
-    Main --> GameFactory : Uses
     GameFactory --> Game : Creates
     GameFactory --> BoardFactory : Uses
     GameFactory --> DifficultyFactory : Uses
+    GameFactory --> DiceFactory : Uses
     
     Game --> Board : Has-A
     Game --> DifficultyStrategy : Has-A
